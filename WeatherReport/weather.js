@@ -10,6 +10,8 @@ function httpRequest(url, callback){
 }
 
 function showWeather(result){
+    chrome.browserAction.setBadgeBackgroundColor({color: '#FFFFF'});
+    chrome.browserAction.setBadgeText({text: '4+'});
     // result = JSON.parse(result);
     // var list = result.list;
     // for(var i in list){

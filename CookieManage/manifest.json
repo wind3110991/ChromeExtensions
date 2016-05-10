@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "天气预报",
+    "name": "cookie管理器",
     "version": "1.0",
-    "description": "查看未来两周的天气情况",
+    "description": "查看，管理浏览器cookie情况",
     "icons": {
         "16": "img/icon16.png",
         "48": "img/icon48.png",
@@ -13,16 +13,16 @@
             "19": "img/icon19.png",
             "38": "img/icon38.png"
         },
-        "default_title": "天气预报",
-        "default_popup": "weather.html"
+        "default_title": "cookie管理",
+        "default_popup": "cookiesetter.html"
     },
-    "options_page": "options.html",
     "web_accessible_resources": [
     "img/icon48.png"
     ],
     "permissions": [
         "notifications",
-        "http://api.openweathermap.org/data/2.5/forecast?q=*",
-        "http://i.tianqi.com/index.php?c=code&id=19"
+        "cookies",
+        "<all_urls>",
+        "https://www.github.com/*"
     ]
 }
